@@ -30,6 +30,6 @@ class Empresa {
 	}
 	
 	method esDeGenteAcotada(){
-		return profesionalesContratados.all({p => p.provinciasDondePuedeTrabajar().size() < 3})
+		return profesionalesContratados.all({p => p.provinciasDondePuedeTrabajar().size() <= 3})
 	}
 }
